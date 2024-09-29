@@ -46,8 +46,28 @@
         },
         {
             "name": "String",
-            "scope": "string",
+            "scope": "string - string.regexp",
             "foreground": "var(dark_green)"
+        },
+        {
+            "name": "Regular Expression",
+            "scope": "string.regexp",
+            "foreground": "var(dark_green)"
+        },
+        {
+            "name": "Regular Expression (escaped character)",
+            "scope": "string.regexp constant.character.escape",
+            "foreground": "var(dark_orange)"
+        },
+        {
+            "name": "Regular Expression (special character)",
+            "scope": "string.regexp support.other.escape.special.regexp",
+            "foreground": "var(dark_orange)"
+        },
+        {
+            "name": "Regular Expression Quantifier",
+            "scope": "string.regexp keyword.operator",
+            "foreground": "var(dark_purple)"
         },
         {
             "name": "Number",
@@ -85,13 +105,14 @@
             "name": "Class name",
             "scope": "entity.name.class",
             "foreground": "var(dark_orange)",
-            "font_style": "underline"
+            "font_style": "bold"
+
         },
         {
             "name": "Inherited class",
             "scope": "entity.other.inherited-class",
             "foreground": "var(dark_orange)",
-            "font_style": "italic underline"
+            "font_style": "bold"
         },
         {
             "name": "Function name",
