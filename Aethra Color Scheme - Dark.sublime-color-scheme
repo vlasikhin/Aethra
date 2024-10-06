@@ -1,168 +1,169 @@
 {
-    "name": "Aethra Light",
+    "name": "Aethra Color Scheme Dark",
     "author": "Pavel Vlasikhin",
     "variables":
     {
-        "black": "#444444",
-        "blue": "#3a6a9a",
-        "blue2": "#7aa0c8",
-        "blue3": "#bcd2e5",
-        "blue4": "#e1eaf3",
-        "green": "#3a9a70",
-        "grey": "#999999",
-        "orange": "#d68245",
-        "red": "#b83333",
-        "white": "#fafafa",
-        "purple": "#8064a2"
+        "black": "#000000",
+        "dark_background": "hsl(210, 15%, 22%)",
+        "dark_foreground": "#e0e0e0",
+        "dark_blue": "#5f87af",
+        "dark_blue2": "#81a2be",
+        "dark_green": "#87af87",
+        "dark_grey": "#a0a0a0",
+        "dark_orange": "#d7af5f",
+        "dark_red": "#cc6666",
+        "dark_purple": "#b294bb",
+        "white": "#ffffff"
     },
     "globals":
     {
-        "foreground": "var(black)",
-        "background": "var(white)",
-        "caret": "var(black)",
-        "line_highlight": "color(var(grey) alpha(0.1))",
-        "selection": "var(blue4) ",
-        "selection_border": "var(blue3)",
-        "inactive_selection": "color(var(blue4) alpha(0.6))",
-        "misspelling": "var(red)",
-        "shadow": "color(var(grey) alpha(0.3))",
-        "active_guide": "var(blue2)",
-        "stack_guide": "color(var(blue2) alpha(0.5))",
-        "highlight": "var(orange)",
-        "find_highlight_foreground": "var(white)",
-        "find_highlight": "var(orange)",
+        "foreground": "var(dark_foreground)",
+        "background": "var(dark_background)",
+        "caret": "var(dark_orange)",
+        "line_highlight": "color(var(white) alpha(0.1))",
+        "selection": "color(var(dark_blue) alpha(0.3))",
+        "selection_border": "var(dark_blue)",
+        "inactive_selection": "color(var(dark_blue) alpha(0.2))",
+        "misspelling": "var(dark_red)",
+        "shadow": "color(var(black) alpha(0.3))",
+        "active_guide": "var(dark_blue2)",
+        "stack_guide": "color(var(dark_blue2) alpha(0.5))",
+        "highlight": "var(dark_orange)",
+        "find_highlight_foreground": "var(dark_background)",
+        "find_highlight": "var(dark_orange)",
         "brackets_options": "bold",
-        "brackets_foreground": "var(blue2)",
+        "brackets_foreground": "var(dark_blue2)",
         "bracket_contents_options": "bold",
-        "bracket_contents_foreground": "var(blue2)"
+        "bracket_contents_foreground": "var(dark_blue2)"
     },
     "rules":
     [
         {
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
-            "foreground": "var(grey)",
+            "foreground": "var(dark_grey)",
             "font_style": "italic"
         },
         {
             "name": "String",
             "scope": "string - string.regexp",
-            "foreground": "var(green)"
+            "foreground": "var(dark_green)"
         },
         {
             "name": "Regular Expression",
             "scope": "string.regexp",
-            "foreground": "var(green)"
+            "foreground": "var(dark_green)"
         },
         {
             "name": "Regular Expression (escaped character)",
             "scope": "string.regexp constant.character.escape",
-            "foreground": "var(orange)"
+            "foreground": "var(dark_orange)"
         },
         {
             "name": "Regular Expression (special character)",
             "scope": "string.regexp support.other.escape.special.regexp",
-            "foreground": "var(orange)"
+            "foreground": "var(dark_orange)"
         },
         {
             "name": "Regular Expression Quantifier",
             "scope": "string.regexp keyword.operator",
-            "foreground": "var(purple)"
+            "foreground": "var(dark_purple)"
         },
         {
             "name": "Number",
             "scope": "constant.numeric",
-            "foreground": "var(blue)"
+            "foreground": "var(dark_orange)"
         },
         {
             "name": "Built-in constant",
             "scope": "constant.language",
-            "foreground": "var(red)",
+            "foreground": "var(dark_red)",
             "font_style": "italic"
         },
         {
             "name": "User-defined constant",
             "scope": "constant.character, constant.other",
-            "foreground": "var(blue2)"
+            "foreground": "var(dark_blue2)"
         },
         {
             "name": "Keyword",
             "scope": "keyword - keyword.operator, keyword.operator.word",
-            "foreground": "var(red)"
+            "foreground": "var(dark_blue)"
         },
         {
             "name": "Storage",
             "scope": "storage",
-            "foreground": "var(red)"
+            "foreground": "var(dark_blue)"
         },
         {
             "name": "Storage type",
             "scope": "storage.type",
-            "foreground": "var(red)",
+            "foreground": "var(dark_blue)",
             "font_style": "italic"
         },
         {
             "name": "Class name",
             "scope": "entity.name.class",
-            "foreground": "var(blue)",
+            "foreground": "var(dark_orange)",
             "font_style": "bold"
+
         },
         {
             "name": "Inherited class",
             "scope": "entity.other.inherited-class",
-            "foreground": "var(blue)",
+            "foreground": "var(dark_orange)",
             "font_style": "bold"
         },
         {
             "name": "Function name",
             "scope": "entity.name.function",
-            "foreground": "var(blue)"
+            "foreground": "var(dark_orange)"
         },
         {
             "name": "Function argument",
             "scope": "variable.parameter",
-            "foreground": "var(orange)",
+            "foreground": "var(dark_orange)",
             "font_style": "italic"
         },
         {
             "name": "Tag name",
             "scope": "entity.name.tag",
-            "foreground": "var(red)"
+            "foreground": "var(dark_blue)"
         },
         {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
-            "foreground": "var(blue2)"
+            "foreground": "var(dark_orange)"
         },
         {
             "name": "Library function",
             "scope": "support.function",
-            "foreground": "var(blue2)",
+            "foreground": "var(dark_blue2)",
             "font_style": "italic"
         },
         {
             "name": "Library constant",
             "scope": "support.constant",
-            "foreground": "var(blue2)",
+            "foreground": "var(dark_blue2)",
             "font_style": "italic"
         },
         {
             "name": "Library class/type",
             "scope": "support.type, support.class",
-            "foreground": "var(blue2)",
+            "foreground": "var(dark_blue2)",
             "font_style": "italic"
         },
         {
             "name": "Invalid",
             "scope": "invalid",
-            "foreground": "var(white)",
-            "background": "var(red)"
+            "foreground": "var(dark_foreground)",
+            "background": "var(dark_red)"
         },
         {
             "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
-            "foreground": "var(white)",
-            "background": "var(purple)"
+            "foreground": "var(dark_foreground)",
+            "background": "var(dark_purple)"
         }
     ]
 }
